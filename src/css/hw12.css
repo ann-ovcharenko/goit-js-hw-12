@@ -28,10 +28,9 @@
   outline: none;
 }
 
-.search-btn {
-  display: block;
+.search-btn,
+.load-more-btn {
   padding: 8px 16px;
-  background-color: white;
   color: black;
   border: none;
   border-radius: 8px;
@@ -41,8 +40,20 @@
   cursor: pointer;
   transition: background-color 250ms ease-in-out;
 }
+.search-btn {
+  background-color: white;
+}
+.search-btn :hover {
+  background-color: rgb(163, 18, 132);
+}
+.load-more-btn {
+  display: block;
+  margin: 36px auto;
+  background-color: rgb(240, 162, 205);
+  width: 150px;
+}
 
-.search-btn:hover {
+.load-more-btn:hover {
   background-color: rgb(163, 18, 132);
 }
 .loader {
