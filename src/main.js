@@ -57,12 +57,9 @@ async function onSearch(event) {
       });
     } else {
       createGallery(images);
-      scrollSmoothly(images.length);
     }
     if (images.length > 0 && totalPages > currentPage) {
       showLoadMoreButton();
-    } else if (images.length > 0) {
-      showEndOfCollectionMessage();
     }
     searchForm.reset();
   } catch (error) {
